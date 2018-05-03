@@ -1,0 +1,39 @@
+logging:
+  level:
+    root: warn
+    org.springframework: warn
+    com.env.pro: debug
+    org.springframework.jdbc.core: warn
+################### DataSource Configuration ##########################
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: gc4ep
+    password: gc4ep
+#    initialize: true
+#    schema: classpath:database/init.sql
+#    sql-script-encoding: utf-8
+
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+
+  redis:
+    port: 6379
+    host: r-2ze20dff666d8bc4.redis.rds.aliyuncs.com
+    password: redis2ALI
+
+info:
+  app:
+    name: "@project.name@" #从pom.xml中获取
+    description: "@project.description@"
+    version: "@project.version@"
+    spring-boot-version: "@project.parent.version@"
+
+
+
