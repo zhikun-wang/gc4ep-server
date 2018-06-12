@@ -7,20 +7,13 @@ logging:
     org.springframework.jdbc.core: warn
     org.springframework.jdbc.datasource: warn
 
-server:
-  port: 8011
-  host: localhost
-  #ssl:
-    #key-store: classpath:keystore.p12
-    #key-store-password: 111111
-    #keyStoreType: PKCS12
-
 
 spring:
   datasource:
     #url: jdbc:mysql://rm-uf6rhhpr6sbi33q37o.mysql.rds.aliyuncs.com/bg_admin?useSSL=false
     #url: jdbc:mysql://192.168.10.105:3306/gc4ep?serverTimezone=GMT%2B8
-    url: jdbc:mysql://10.211.55.5:3306/gc4ep?serverTimezone=GMT%2B8
+    url: jdbc:mysql://ubuntu17:3306/gc4ep?serverTimezone=GMT%2B8
+    #url: jdbc:mysql://rm-2ze1o8k6649h4217r.mysql.rds.aliyuncs.com:3306/gc4ep?serverTimezone=GMT%2B8
 
 socket:
   port: 10502

@@ -17,11 +17,11 @@ spring:
 #    schema: classpath:database/init.sql
 #    sql-script-encoding: utf-8
 
-  http:
-    encoding:
-      force: true
-      charset: UTF-8
-      enabled: true
+#  http:
+#    encoding:
+#      force: true
+#      charset: UTF-8
+#      enabled: true
 
   redis:
     port: 6379
@@ -37,3 +37,11 @@ info:
 
 
 
+server:
+  port: 10001
+  host: localhost
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: tomcat
+    keyStoreType: PKCS12
+    keyAlias: tomcat
